@@ -1,14 +1,14 @@
 ##Spring MVC ~ annotation
  
-![Aaron Swartz](https://github.com/ittarvin/java-web/blob/master/src/main/webapp/images/mvc.png?raw=true)   
+![Aaron Swartz](https://github.com/ittarvin/snow-ball/blob/master/spring-mvc/src/main/webapp/images/mvc.png?raw=true)   
 
 0.Eclipse 创建 Maven Project(选择：maven-archetype-webapp/A simple Java web application)   
 项目目录结构图：   
-![Aaron Swartz](https://github.com/ittarvin/java-web/blob/master/src/main/webapp/images/java_web_catalogue.png?raw=true)    
+![Aaron Swartz](https://github.com/ittarvin/snow-ball/blob/master/spring-mvc/src/main/webapp/images/java_web_catalogue.png?raw=true)    
 *java Build Path-Source/Default output folder : java-web/src/main/webapp/WEB-INF/classes*   
 
 1.web.xml 配置 DispatcherServlet   
-![Aaron Swartz](https://github.com/ittarvin/java-web/blob/master/src/main/webapp/images/mvc-contexts.gif?raw=true)  
+![Aaron Swartz](https://github.com/ittarvin/snow-ball/blob/master/spring-mvc/src/main/webapp/images/mvc-contexts.gif?raw=true)  
 
         <!-- spring framework mvc begin -->
            <!--配置分发,Spring MVC 自动查找 WEB-INF 目下命名为[servlet-name]-servlet.xml 的文件 -->
