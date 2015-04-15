@@ -4,8 +4,8 @@
 
 ###目录   
 
-    1).java-web spring mvc   
+    1).spring mvc 
     2).nodejs 学习   
     3).design-pattern 设计模式  
-    4).Todo Spring Restful
+    4).todo Spring Restful
 
