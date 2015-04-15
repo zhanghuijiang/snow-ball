@@ -1,6 +1,3 @@
-# 雪球 snow-ball   
-知识在于积累    
-
 ##使用技术
 spring mvc (annotation/ioc),springjdbc + Mysql,Mongodb   
 
