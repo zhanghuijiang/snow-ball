@@ -1,7 +1,7 @@
 ## Spring MVC ~ IOC  
 
 0.代码目录重新调整-项目目录结构图   
-![Aaron Swartz](https://github.com/ittarvin/java-web/blob/master/src/main/webapp/images/java_web_catalogue2.png?raw=true)   
+![Aaron Swartz](https://github.com/ittarvin/snow-ball/blob/master/spring-mvc/src/main/webapp/images/java_web_catalogue2.png?raw=true)   
 
 1.配置web.xml 
 
