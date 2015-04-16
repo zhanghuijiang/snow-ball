@@ -8,5 +8,5 @@
     2).nodejs 学习   
     3).design-pattern 设计模式  
     4).todo Spring Restful
-    5).排序
+    5).sort 排序
 
