@@ -1,7 +1,7 @@
 ##Spring MVC  ~ Spring JDBC + Mysql
 
 0.代码目录重新调整-项目目录结构图    
-![Aaron Swartz](https://github.com/ittarvin/java-web/blob/master/src/main/webapp/images/java_web_catalogue3.png?raw=true)   
+![Aaron Swartz](https://github.com/ittarvin/snow-ball/blob/master/spring-mvc/src/main/webapp/images/java_web_catalogue3.png?raw=true)   
 1.pom.xml 配置导入依赖jar   
 
     	<!-- spring framework mvc Datebase begin -->  
@@ -73,9 +73,9 @@
 
 6.bean.xml 配置文件中的  scope="prototype/singleton"   
 singleton:类的实例只被创建一次  
-![Aaron Swartz](https://github.com/ittarvin/java-web/blob/master/src/main/webapp/images/singleton.png?raw=true)   
+![Aaron Swartz](https://github.com/ittarvin/snow-ball/blob/master/spring-mvc/src/main/webapp/images/singleton.png?raw=true)   
 prototype:类被调用是都会产生一个新的实例
-![Aaron Swartz](https://github.com/ittarvin/java-web/blob/master/src/main/webapp/images/prototype.png?raw=true)   
+![Aaron Swartz](https://github.com/ittarvin/snow-ball/blob/master/spring-mvc/src/main/webapp/images/prototype.png?raw=true)   
 
 
 
