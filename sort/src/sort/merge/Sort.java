@@ -6,6 +6,7 @@ package sort.merge;
  */
 public class Sort {
 
+	//将数组拆分致元素个数为1的数组
 	public static void sort(int[] list) {
 
 		if (list.length > 1) {
@@ -26,6 +27,7 @@ public class Sort {
 
 	}
 
+	//合并数组
 	public static int[] merge(int[] list1, int[] list2) {
 
 		int[] temp = new int[list1.length + list2.length];
