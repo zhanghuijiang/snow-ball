@@ -2,6 +2,7 @@ package sort.bubble;
 
 /**
  * 冒泡排序
+ * 
  * @author arvin
  */
 public class Sort {
