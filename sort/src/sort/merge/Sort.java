@@ -2,7 +2,6 @@ package sort.merge;
 
 /**
  * 归并排序
- * 
  * @author arvin
  */
 public class Sort {
