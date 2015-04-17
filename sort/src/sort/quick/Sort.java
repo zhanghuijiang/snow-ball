@@ -3,7 +3,6 @@ package sort.quick;
 /**
  * 快速排序
  * @author arvin
- *
  */
 public class Sort {
 
