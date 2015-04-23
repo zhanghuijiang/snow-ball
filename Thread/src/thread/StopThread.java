@@ -2,6 +2,10 @@ package thread;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * 原子性变量的同步
+ * @author arvin
+ */
 public class StopThread {
 
 	private static boolean stopRequested;
