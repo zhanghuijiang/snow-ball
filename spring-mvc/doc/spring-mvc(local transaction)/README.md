@@ -30,6 +30,7 @@
           
 
 3.Propagation 
+
            REQUIRED (Default) 在有事务的状态下执行。如果没有事务创建一个新的事务   
            SUPPORTS 如果当前有事务，则在事务状态下执行。如果当前没有事务，在无事务状态下执行。  
            MANDATORY 必须在事务状态下执行，如果没有事务则抛出异常 IllegalTransactionStateException   
