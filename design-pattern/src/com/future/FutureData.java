@@ -3,17 +3,18 @@ package com.future;
 public class FutureData implements Data {
 
 	public FutureData(){
-		System.out.println("生产部门准备完毕");
+		System.out.println("货车就绪");
 	}
 	
 	protected RealData realdata = null;
 	protected boolean isReady = false;
 
 	public synchronized void setRealData(RealData realdata) {
+		System.out.println("装车");
 		if (isReady) {
 			return;
 		}
-		System.out.println("交付生产部门，通知其他部门可以取货");
+		System.out.println("装车完成，通知可以开车了");
 		this.realdata = realdata;
 		this.isReady = true;
 		notifyAll();//唤醒等待线程
@@ -23,7 +24,7 @@ public class FutureData implements Data {
 	public synchronized String getResult() {
 		while (!isReady) {
 			try {
-				System.out.println("等待生产.....");
+				System.out.println("等待配货和装车.....");
 				wait();
 			} catch (InterruptedException e) {
 				e.printStackTrace();

@@ -15,7 +15,7 @@ public class Test {
 		}
 		System.out.println("先去冲杯coffee");
 
-		System.out.println("生产完成：" + data.getResult());
+		System.out.println("开车：" + data.getResult());
 
 	}
 

@@ -5,6 +5,7 @@ public class RealData implements Data {
 	protected final String result;
 	
 	public RealData(String para){
+		System.out.println("配货");
 		StringBuffer sb = new StringBuffer();
 		for (int i = 0; i < 9; i++) {
 			sb.append(para);
