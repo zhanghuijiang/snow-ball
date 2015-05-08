@@ -1,2 +1,68 @@
 批量删除文件
 #rm -rf catalina*.txt
+
+查看cpu
+#more /proc/cpuinfo | grep "model name"
+#grep "model name" /proc/cpuinfo
+#grep "model name" /proc/cpuinfo | cut -f2 -d:
+
+ 
+查看内存
+#grep MemTotal /proc/meminfo
+#grep MemTotal /proc/meminfo | cut -f2 -d:
+#free -m |grep "Mem" | awk '{print $2}'
+
+
+查看CPU位数(32 or 64)
+#getconf LONG_BIT
+
+
+查看当前linux的版本
+#more /etc/redhat-release
+#cat /etc/redhat-release
+
+
+查看内核版本
+#uname -r
+#uname -a
+
+
+查看ip，mac地址
+在ifcfg-eth0 文件里你可以看到mac，网关等信息。
+
+#ifconfig
+#cat /etc/sysconfig/network-scripts/ifcfg-eth0 | grep IPADDR
+#cat /etc/sysconfig/network-scripts/ifcfg-eth0 | grep IPADDR | cut -f2 -d=
+#ifconfig eth0 |grep "inet addr:" |awk '{print $2}'|cut -c 6-
+#ifconfig   | grep 'inet addr:'| grep -v '127.0.0.1' | cut -d: -f2 | awk '{ print $1}'
+
+
+查看网关
+#cat /etc/sysconfig/network
+
+
+查看dns
+#cat /etc/resolv.conf
+
+查看默认语言
+#echo $LANG $LANGUAGE
+#cat /etc/sysconfig/i18n
+
+
+查看所属时区和是否使用UTC时间
+#cat /etc/sysconfig/clock
+
+
+查看主机名
+#hostname
+#cat /etc/sysconfig/network
+
+
+查看开机时间多长
+#uptime
+
+
+ 查看163.com的服务器环境
+#curl --head www.163.com              
+
+
