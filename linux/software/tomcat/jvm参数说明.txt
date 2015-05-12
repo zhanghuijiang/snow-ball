@@ -21,6 +21,7 @@
 -XX:ParallelGCThreads 可用来增加并行度(多CPU)
 -XX:UseParallelGC 设置后可以使用并行清除收集器(多CPU)
 
+-Xverify:none 禁用验证
 
 其他说明：
 1.“m”说明单位是MB，否则默认是KB
@@ -28,3 +29,4 @@
 3.一般把-Xms和-Xmx设为一样大
 4.一般把-Xmn设置为-Xmx值的1/4
 5.一般将堆的总大小的50%到60%分配给新生成的池
+
