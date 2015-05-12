@@ -1,0 +1,2 @@
+查看端口状态
+#netstat -nalp|grep 80
