@@ -1,0 +1,6 @@
+批量删除文件
+#rm -rf catalina*.txt
+
+
+目录复制
+#cp -rf /usr/local/dir/  ./
