@@ -1,6 +1,33 @@
-批量删除文件
+1.批量删除文件
 #rm -rf catalina*.txt
 
 
-目录复制
+2.目录复制
 #cp -rf /usr/local/dir/  ./
+
+
+3.zip 压缩 or 解压
+
+#zip -r  apache-tomcat-7.zip apache-tomcat-7.0.61
+#zip -r myfile.zip ./*
+将当前目录下的所有文件和文件夹全部压缩成myfile.zip文件,－r表示递归压缩子目录下所有文件.
+
+
+#unzip -o -d /home/sunny myfile.zip
+把myfile.zip文件解压到 /home/sunny/
+-o:不提示的情况下覆盖文件；
+-d:-d /home/sunny 指明将文件解压缩到/home/sunny目录下
+
+
+#zip -d myfile.zip smart.txt
+删除压缩文件中smart.txt文件
+
+
+#zip -m myfile.zip ./rpm_info.txt
+向压缩文件中myfile.zip中添加rpm_info.txt文件
+
+
+
+
+
+
