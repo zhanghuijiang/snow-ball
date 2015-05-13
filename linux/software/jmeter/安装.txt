@@ -5,3 +5,6 @@ http://jmeter-plugins.org/
 JMeterPlugins-Extras-1.2.1.zip
 JMeterPlugins-Standard-1.2.1.zip
 ServerAgent-2.2.1.zip(注意：服务器端)
+
+驱动
+#sh startAgent.sh

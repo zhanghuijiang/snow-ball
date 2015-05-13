@@ -32,4 +32,7 @@
 #mv apache-tomcat-7.zip ./vcard-web/
 
 
+5.添加读写权限
+chmod a+x filename
+
 
