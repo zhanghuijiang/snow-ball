@@ -28,6 +28,8 @@
 
 
 
+4.文件移动
+#mv apache-tomcat-7.zip ./vcard-web/
 
 
 
