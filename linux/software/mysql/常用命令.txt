@@ -1,2 +1,12 @@
-查看版本信息
+1.查看版本信息
 #mysql -V
+
+
+2.添加客户端访问用户
+#mysql -u root -p
+#use mysql
+#select user, host, password, from user;
+#delete from user where host="localhost" and user="";
+#INSERT INTO user(host, user, password, select_priv, insert_priv, update_priv) VALUES ('%', 'root', PASSWORD('123456'), 'Y', 'Y','Y');  
+#quit
+#service mysqld restart
