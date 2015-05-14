@@ -33,6 +33,9 @@
 
 
 5.添加读写权限
-chmod a+x filename
+#chmod a+x filename
+
+6.查看文件大小
+#du -sh
 
 
