@@ -68,11 +68,11 @@
 		
 		chmod [mode] 文件名?
 		
-		例1：$ chmoda+x sort
+		例1：$ chmod a+x sort
 		
 		所有的使用者（a）都增加执行权限
 		
-		例2：$ chmodug+w，o-x text
+		例2：$ chmod ug+w，o-x text
 		
 		文件主和与文件主同组的用户增加写权限，其他用户删除执行权限。
 		
