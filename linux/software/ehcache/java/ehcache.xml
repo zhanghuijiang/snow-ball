@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="ehcache.xsd"
+         updateCheck="true" monitoring="autodetect"
+         dynamicConfig="true" >
+         
+    <diskStore path="/ehcache"/>
+    
+    <cacheManagerEventListenerFactory class="" properties=""/>
+
+	<!-- 
+	eternal：永久的, 永恒的     eternal:true，表示该对象永远不过期
+	maxElementsOnDisk：	硬盘管理的缓存元素数量最大限值。默认值为0，就是没有限制。
+	diskSpoolBufferSizeMB：	存入磁盘时的缓冲区大小，默认30MB,每个缓存都有自己的缓冲区
+	memoryStoreEvictionPolicy
+		LFU：least frequently used  最少被使用
+		LRU：Least Recently Used    近最少使用的
+	-->
+    <defaultCache
+           maxElementsInMemory="0"
+           eternal="true"
+           overflowToDisk="true" >
+    </defaultCache>
+	
+	<cache name="methodCache" maxElementsInMemory="10" eternal="false" overflowToDisk="true" timeToIdleSeconds="1800" timeToLiveSeconds="36000"/>
+        
+   </ehcache>
+
