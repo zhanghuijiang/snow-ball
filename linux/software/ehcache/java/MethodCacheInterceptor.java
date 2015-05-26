@@ -1,6 +1,7 @@
 package com.vcard.cache;
 
 import java.io.Serializable;
+import java.util.Map;
 
 import net.sf.ehcache.Cache;
 import net.sf.ehcache.Element;
@@ -39,16 +40,45 @@ public class MethodCacheInterceptor implements MethodInterceptor,InitializingBea
 	        	synchronized (this) {
 	        		element = cache.get(cacheKey);
 	        		if (element == null) {
-	        			System.out.println(cache.getName() +" is caching --> " + cacheKey);
 	        			// 调用实际的方法
 	        			result = invocation.proceed();
+	        			if(result == null){
+	        				System.out.println(cache.getName() + " is removing " + cacheKey);
+	        				return invocation.proceed();
+	        			}
+	        			if(result instanceof Map){
+	        				System.out.println(cache.getName() + " is removing " + cacheKey);
+		        			Map map = (Map)result;
+		        			if(map.isEmpty()){
+		        				return invocation.proceed();
+		        			}
+		        		}
+	        			System.out.println(cache.getName() +" is caching --> " + cacheKey);
 	        			element = new Element(cacheKey, (Serializable) result);
 	        			cache.put(element);
 	        		} else {
 	        			System.out.println(cache.getName() +" is using cache -->  " + cacheKey);
 	        		}
+	        		
+	        		Object obj = element.getValue();
+	        		if(obj == null){
+	        			System.out.println(cache.getName() + " is removing " + cacheKey);
+	        			cache.remove(cacheKey);
+        				cache.flush();
+        				return invocation.proceed();
+        			}
+	        		if(obj instanceof Map){
+	        			System.out.println(cache.getName() + " is removing " + cacheKey);
+	        			Map map = (Map)obj;
+	        			if(map.isEmpty()){
+	        				cache.remove(cacheKey);
+	        				cache.flush();
+	        				return invocation.proceed();
+	        			}
+	        		}
+	        		cache.flush();
+	        		return obj;
 	        	}
-	        	return element.getValue();
 	        }else{
 	        	synchronized (this) {
 	        		result = invocation.proceed();
