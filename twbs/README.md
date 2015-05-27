@@ -1,1 +1,1 @@
-*bootstrap + twbs 分页插件*    
+*jquery + bootstrap + twbs 分页插件*    
