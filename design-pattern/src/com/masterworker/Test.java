@@ -3,6 +3,11 @@ package com.masterworker;
 import java.util.Map;
 import java.util.Set;
 
+/**
+ * 并行模式
+ * @author arvin
+ *
+ */
 public class Test {
 
 	public static void main(String[] args) {
