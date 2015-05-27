@@ -8,9 +8,7 @@ import java.util.Set;
 /**
  * 观察者模式
  * 该类允许客户端在将元素添加到集合中时预定通知
- * 
  * @author arvin
- *
  * @param <E>
  */
 public class Observable<E> extends ForwardingSet<E> {
