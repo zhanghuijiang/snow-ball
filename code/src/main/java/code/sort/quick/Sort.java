@@ -1,4 +1,4 @@
-package sort.quick;
+package code.sort.quick;
 
 /**
  * 快速排序

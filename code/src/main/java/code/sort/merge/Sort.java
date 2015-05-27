@@ -1,4 +1,4 @@
-package sort.merge;
+package code.sort.merge;
 
 /**
  * 归并排序

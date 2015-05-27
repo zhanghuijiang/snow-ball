@@ -1,4 +1,4 @@
-package sort.bubble;
+package code.sort.bubble;
 
 /**
  * 冒泡排序
