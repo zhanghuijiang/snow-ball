@@ -10,3 +10,19 @@
 #INSERT INTO user(host, user, password, select_priv, insert_priv, update_priv) VALUES ('%', 'root', PASSWORD('123456'), 'Y', 'Y','Y');  
 #quit
 #service mysqld restart
+
+
+3.到处备份
+#mysqldump -u root -h localhost -P 3306 -p --all-databases > databases.sql  
+#mysqldump -u root -h localhost -P 3306 -p test > databases.sql  
+
+备注：mysqldump: Got error: 1066: Not unique table/alias: 'calendarsubscribe' when using LOCK TABLES
+修改/etc/my.cnf，将下面这行用#注释掉即可：
+#lower_case_table_names=1（等于1表示不区分表名大小写）
+注释掉后，重启mysql：
+#service  mysql  restart
+再导出，好了。
+
+4.导入数据
+ mysql -u$USER -p$PASSWD -hlocalhost -P3306 --default-character-set=utf8 zzlcs < databases.sql
+
