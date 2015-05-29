@@ -24,5 +24,5 @@
 再导出，好了。
 
 4.导入数据
- mysql -u$USER -p$PASSWD -hlocalhost -P3306 --default-character-set=utf8 zzlcs < databases.sql
+#mysql -u$USER -p$PASSWD -hlocalhost -P3306 --default-character-set=utf8 zzlcs < databases.sql
 
