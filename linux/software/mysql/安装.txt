@@ -16,3 +16,6 @@
 
 停止服务
 #service mysql55-mysqld stop
+
+
+如果需要修改 my.cnf 注意一下安装目录
