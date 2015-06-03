@@ -10,10 +10,13 @@ jdk-7u79-linux-x64.tar.gz
 3、设置jdk环境变量
 #vi /etc/profile
 
-export JAVA_HOME=/usr/local/java/jdk1.7.0_45
-export JRE_HOME=/usr/local/java/jdk1.7.0_45/jre
-export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:$JRE_HOME/lib:$CLASSPATH
-export PATH=$JAVA_HOME/bin: $PATH
+export JAVA_HOME=/ usr/local/java/jdk1.7.0_79
+export CLASSPATH=.:%JAVA_HOME%/lib/dt.jar:%JAVA_HOME%/lib/tools.jar
+export PATH=$PATH:$JAVA_HOME/bin
+export JAVA_OPTS="$JAVA_OPTS -Dcom.sun.management.jmxremote.port=12345"
+export JAVA_OPTS="$JAVA_OPTS -Dcom.sun.management.jmxremote.authenticate=false"
+export JAVA_OPTS="$JAVA_OPTS -Dcom.sun.management.jmxremote.ssl=false"
+
 
 请记住，在上述添加过程中，等号两侧不要加入空格，不然会出现“不是有效的标识符”，因为source /etc/profile 时不能识别多余到空格，会理解为是路径一部分。
 
