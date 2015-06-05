@@ -1,4 +1,4 @@
-package code.thread;
+package code.thread.pool;
 
 import java.util.List;
 import java.util.Vector;

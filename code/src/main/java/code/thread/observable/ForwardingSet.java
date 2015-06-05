@@ -1,4 +1,4 @@
-package thread.observ;
+package code.thread.observable;
 
 import java.util.Collection;
 import java.util.Iterator;

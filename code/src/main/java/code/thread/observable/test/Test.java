@@ -1,9 +1,9 @@
-package thread.observ.test;
+package code.thread.observable.test;
 
 import java.util.HashSet;
 
-import thread.observ.Observable;
-import thread.observ.SetObserver;
+import code.thread.observable.Observable;
+import code.thread.observable.SetObserver;
 
 /**
  * 异常测试

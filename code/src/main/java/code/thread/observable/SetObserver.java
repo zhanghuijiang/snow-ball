@@ -1,4 +1,4 @@
-package thread.observ;
+package code.thread.observable;
 
 /**
  * 添加观察者接口

@@ -1,4 +1,4 @@
-package thread.concur;
+package code.thread.concurrent;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.Executor;

@@ -1,4 +1,4 @@
-package code.thread;
+package code.thread.pool;
 
 public class PThread extends Thread {
 
