@@ -47,3 +47,6 @@
 #du -sh
 
 
+7.远程文件拷贝
+#scp root@115.28.167.226:/usr/local/svn/ dumpfile
+#scp dumpfile root@115.28.167.226:/usr/local/svn/ 
