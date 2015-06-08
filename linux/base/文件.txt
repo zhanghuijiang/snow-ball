@@ -6,7 +6,7 @@
 #cp -rf /usr/local/dir/  ./
 
 
-3.zip 压缩 or 解压
+3.zip 压缩 or 解压( or 参考：http://blog.chinaunix.net/uid-20614832-id-1613768.html)
 
 #zip -r  apache-tomcat-7.zip apache-tomcat-7.0.61
 #zip -r myfile.zip ./*
