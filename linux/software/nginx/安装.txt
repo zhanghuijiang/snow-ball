@@ -51,4 +51,13 @@ pkill -9 nginx
 8.重启
 #/usr/local/nginx/sbin/nginx -s reload
 
+9.重启附加
+
+#/etc/init.d/nginx start
+
+#/etc/init.d/nginx sttop
+
+#/etc/init.d/nginx reload
+
+#/etc/init.d/nginx restart
 
