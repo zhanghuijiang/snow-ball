@@ -50,3 +50,11 @@
 7.远程文件拷贝
 #scp root@115.28.167.226:/usr/local/svn/ dumpfile
 #scp dumpfile root@115.28.167.226:/usr/local/svn/ 
+
+
+8.查看文件大小大于 100M 的文件
+命令查看
+#df -h 
+#find /usr -size +100000000c
+
+
