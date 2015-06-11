@@ -1,5 +1,5 @@
 ##参考资料  
-bootstrap : http://getbootstrap.com/
+bootstrap : http://getbootstrap.com/   
 backbone : http://backbonejs.org/   
 underscore : http://underscorejs.org/   
 curl : http://davidwalsh.name/curljs   
@@ -9,8 +9,6 @@ mongodb : http://docs.mongodb.org/manual/
 spring data mongoDB : http://docs.spring.io/spring-data/data-mongo/docs/1.7.0.RC1/reference/html/  
 
 ##效果   
-默认登录用户 admin@admin / 123456    
-
 ### 1).todo ref -- http://backbonejs.org/#examples-todos   
 ![Aaron Swartz](https://github.com/ittarvin/snow-ball/blob/master/todo/src/main/webapp/images/todo.png?raw=true)    
 
