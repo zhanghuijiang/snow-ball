@@ -1,14 +1,6 @@
-##使用技术
-spring mvc (annotation/ioc),springjdbc + Mysql,Mongodb   
-
-jsp,jstl,el,html,bootstrap,curl,jquery,backbone,underscore   
-
-##摘要    
-1.布局采用Bootstrap模版,服务器端采用Spring mvc,数据库采用Mysql和Mongodb。   
-2.使用demo的方式记录学习内容。  
-
 ##参考资料  
-backbone :http://backbonejs.org/    
+bootstrap : http://getbootstrap.com/
+backbone : http://backbonejs.org/   
 underscore : http://underscorejs.org/   
 curl : http://davidwalsh.name/curljs   
 jquery :　http://jquery.com/    
