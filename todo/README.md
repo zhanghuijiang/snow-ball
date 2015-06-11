@@ -16,7 +16,7 @@ spring mvc : http://docs.spring.io/spring/docs/4.2.0.BUILD-SNAPSHOT/spring-frame
 mongodb : http://docs.mongodb.org/manual/   
 spring data mongoDB : http://docs.spring.io/spring-data/data-mongo/docs/1.7.0.RC1/reference/html/  
 
-##例子   
+##例子效果   
 默认登录用户 admin@admin / 123456    
 
 ### 1).todo ref -- http://backbonejs.org/#examples-todos   
