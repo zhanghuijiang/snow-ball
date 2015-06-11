@@ -32,7 +32,6 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     
-<!--     <script data-curl-run="js/home.js" src="js/plugin/curl/curl.js"></script> -->
     
   </head>
 
@@ -49,23 +48,15 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Todo</a>
+          <a class="navbar-brand" href="#"></a>
         </div>
         
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="#Home">Home</a></li>
-            <li class="dropdown">
-              <a href="#Demo" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Demo<span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li class="dropdown-header">backbone.js</li>
-                <li><a href="togo?name=todo">todos</a></li>
-                <li><a href="togo?name=todosearch">todos - search</a></li>
-                <li><a href="togo?name=todopage">todos - page</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">other</li>
-              </ul>
-            </li>
+            <li><a href="togo?name=home">Home</a></li>
+            <li><a href="togo?name=todo">todo</a></li>
+            <li><a href="togo?name=todosearch">search</a></li>
+            <li><a href="togo?name=todopage">page</a></li>
           </ul>
          
       </div>
