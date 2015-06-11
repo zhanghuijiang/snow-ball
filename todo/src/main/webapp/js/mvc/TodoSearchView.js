@@ -53,7 +53,8 @@ define(function(require) {
 		    this.$("#todo-list").append(view.render().el)
 	    },
 	    events: {
-		      "keypress #todo-title":  "searchOnEnter"
+		      "keypress #todo-title":  "searchOnEnter",
+		      "click #todo-title-button":  "searchOnButton"
 		},
 		clearModels:function(){
     	  Todos.each(function(model){
@@ -74,6 +75,13 @@ define(function(require) {
 	    },
 		searchOnEnter: function(e) {
 		      if (e.keyCode != 13) return;
+		      var musketeers  = Todos.where({title: this.input.val()});
+		      if(musketeers){
+		    	  this.clearModels();
+		    	  this.reload();
+		      }
+		},
+		searchOnButton: function(e) {
 		      var musketeers  = Todos.where({title: this.input.val()});
 		      if(musketeers){
 		    	  this.clearModels();

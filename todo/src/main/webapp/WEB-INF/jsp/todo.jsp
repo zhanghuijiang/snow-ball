@@ -99,8 +99,8 @@
              <div id="todoapp">
 
 			    <header>
-			     
-			      <input id="new-todo" type="text" placeholder="What needs to be done?">
+			      <input id="new-todo" type="text" placeholder="What needs to be done?"/>
+			      <input id="new-todo-button" type="button" value="add">
 			    </header>
 			
 			    <section id="main">

@@ -85,7 +85,13 @@
          
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
         
-          <h2 class="sub-header"><input id="todo-title" type="text" class="form-control" placeholder="Search Title..."></h2>
+          <div class="row placeholders" id="page-info">
+               <input id="todo-title-button" type="button" style="width:30%" value="F5">
+          </div>
+          
+          <h2 class="sub-header">
+            <input id="todo-title" type="text" class="form-control" placeholder="Search Title...">
+          </h2>
           
           <div class="table-responsive">
           

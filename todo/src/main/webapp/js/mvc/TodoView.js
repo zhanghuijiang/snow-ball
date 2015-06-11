@@ -99,6 +99,7 @@ define(function(require) {
 		    statsTemplate : _.template($('#stats-template').html()),//按目标模版访问实例数据
 		    events: {
 		      "keypress #new-todo":  "createOnEnter",//回车
+		      "click #new-todo-button":  "createOnButton",//添加按钮
 		      "click #clear-completed": "clearCompleted",//单击
 		      "click #toggle-all": "toggleAllComplete"
 		    },
@@ -143,6 +144,12 @@ define(function(require) {
 		      Todos.create({title: this.input.val()});
 		      this.input.val('');
 		    },
+		    createOnButton: function(e) {
+		    	 if (!this.input.val()) return;
+	              //Convenience to create a new instance of a model within a collection
+		    	 Todos.create({title: this.input.val()});
+			     this.input.val('');
+			},
 		    clearCompleted: function() {
 		      _.invoke(Todos.done(), 'destroy');
 		      return false;
