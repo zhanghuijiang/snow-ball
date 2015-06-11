@@ -17,9 +17,6 @@
     <script type="text/javascript" src="js/plugin/jquery/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="js/plugin/bootstrap-3.3.4/dist/js/bootstrap.min.js"></script>
     
-    <!-- Custom styles for this template -->
-    <link href="css/navbar-fixed-top.css" rel="stylesheet">
-
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]>
       <script src="js/plugin/bootstrap-3.3.4/assets/js/ie8-responsive-file-warning.js"></script>
@@ -39,7 +36,6 @@
 
     <!-- Fixed navbar -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
        
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">

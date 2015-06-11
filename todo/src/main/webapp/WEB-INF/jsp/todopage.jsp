@@ -3,16 +3,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <title>Todo Page</title>
+    <title>Just do it</title>
 
     <!-- Bootstrap core CSS -->
     <link href="js/plugin/bootstrap-3.3.4/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <script type="text/javascript" src="js/plugin/jquery/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/plugin/bootstrap-3.3.4/dist/js/bootstrap.min.js"></script>
+    
     <!-- Custom styles for this template -->
     <link href="css/dashboard.css" rel="stylesheet">
-
+    
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]>
       <script src="js/plugin/bootstrap-3.3.4/assets/js/ie8-responsive-file-warning.js"></script>
@@ -24,6 +31,7 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
     
     <script data-curl-run="js/todopage.js" src="js/plugin/curl/curl.js"></script>
     
@@ -64,8 +72,9 @@
 
   <body>
 
+    <!-- Fixed navbar -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
+       
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -73,17 +82,19 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Snow ball</a>
+          <a class="navbar-brand" href="#"></a>
         </div>
+        
         <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-           <li><a href="#Default">Default</a></li>
+          <ul class="nav navbar-nav">
+            <li><a href="togo?name=home">Home</a></li>
+            <li><a href="togo?name=todo">todo</a></li>
+            <li><a href="togo?name=todosearch">search</a></li>
+            <li><a href="togo?name=todopage">page</a></li>
           </ul>
-          <div class="navbar-form navbar-right">
-          </div>
         </div>
-      </div>
     </nav>
+    
 
     <div class="container-fluid">
       
@@ -91,7 +102,7 @@
         
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
-            <li class="active"><a href="#Todos">Todos</a></li>
+            <li class="active"><a href="#Todos">简介</a></li>
           </ul>
         </div>
         
@@ -103,7 +114,7 @@
                
           </div>
           
-          <h2 class="sub-header">查询结果</h2>
+<!--      <h2 class="sub-header">查询结果</h2> -->
           
           <div class="table-responsive">
           
