@@ -10,10 +10,10 @@ spring data mongoDB : http://docs.spring.io/spring-data/data-mongo/docs/1.7.0.RC
 
 ##效果   
 ### 1).todo ref -- http://backbonejs.org/#examples-todos   
-![Aaron Swartz](https://github.com/ittarvin/snow-ball/blob/master/todo/src/main/webapp/images/todo.png?raw=true)    
+![Aaron Swartz](https://github.com/ittarvin/snow-ball/blob/master/todo/src/main/webapp/images/todo.jpg?raw=true)    
 
 ### 2).todo title search          
-![Aaron Swartz](https://github.com/ittarvin/snow-ball/blob/master/todo/src/main/webapp/images/todosearch.png?raw=true)
+![Aaron Swartz](https://github.com/ittarvin/snow-ball/blob/master/todo/src/main/webapp/images/todosearch.jpg?raw=true)
 
 ### 3).todo page           
-![Aaron Swartz](https://github.com/ittarvin/snow-ball/blob/master/todo/src/main/webapp/images/todopage.png?raw=true)
+![Aaron Swartz](https://github.com/ittarvin/snow-ball/blob/master/todo/src/main/webapp/images/todopage.jpg?raw=true)
