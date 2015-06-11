@@ -57,74 +57,53 @@
   <body>
 
     <!-- Fixed navbar -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-       
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#"></a>
-        </div>
-        
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="togo?name=home">Home</a></li>
-            <li><a href="togo?name=todo">todo</a></li>
-            <li><a href="togo?name=todosearch">search</a></li>
-            <li><a href="togo?name=todopage">page</a></li>
-          </ul>
-         
-      </div>
-    </nav>
+    <jsp:include page="navbar.jsp"/>
 
     <div class="container">
 
-<div class="row">
-        
-       <div class="col-sm-3 col-md-2 sidebar">
-          <ul class="nav nav-sidebar">
-            <li class="active"><a href="#Todos">简介</a></li>
-          </ul>
-        </div>
-        
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-        
-          <h1 class="page-header"></h1>
-          
-          <div class="table-responsive">
-          
-             <div id="todoapp">
-
-			    <header>
-			      <input id="new-todo" type="text" placeholder="What needs to be done?"/>
-			      <input id="new-todo-button" type="button" value="add">
-			    </header>
-			
-			    <section id="main">
-			      <input id="toggle-all" type="checkbox">
-			      <label for="toggle-all">Mark all as complete</label>
-			      <ul id="todo-list"></ul>
-			    </section>
-			
-			    <footer>
-			      <a id="clear-completed">Clear completed</a>
-			      <div id="todo-count"></div>
-			    </footer>
-			
-			  </div>
-			
-			  <div id="instructions">
-			    1.Enter to save a todo.</br>
-			    2.Double-click to edit a todo.
-			  </div>
-            
-          </div>
-          
-        </div>
-        
+		<div class="row">
+		        
+		       <div class="col-sm-3 col-md-2 sidebar">
+		          <ul class="nav nav-sidebar">
+		            <li class="active"><a href="#Todos">简介</a></li>
+		          </ul>
+		        </div>
+		        
+		        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+		        
+		          <h1 class="page-header"></h1>
+		          
+		          <div class="table-responsive">
+		          
+		             <div id="todoapp">
+		
+					    <header>
+					      <input id="new-todo" type="text" placeholder="What needs to be done?"/>
+					      <input id="new-todo-button" type="button" value="add">
+					    </header>
+					
+					    <section id="main">
+					      <input id="toggle-all" type="checkbox">
+					      <label for="toggle-all">Mark all as complete</label>
+					      <ul id="todo-list"></ul>
+					    </section>
+					
+					    <footer>
+					      <a id="clear-completed">Clear completed</a>
+					      <div id="todo-count"></div>
+					    </footer>
+					
+					  </div>
+					
+					  <div id="instructions">
+					    1.Enter to save a todo.</br>
+					    2.Double-click to edit a todo.
+					  </div>
+		            
+		          </div>
+		          
+		</div>
+		        
       </div>
   
     </div> <!-- /container -->
