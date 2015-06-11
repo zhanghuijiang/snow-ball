@@ -10,11 +10,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Snow ball</title>
+    <title>Just do it</title>
 
     <!-- Bootstrap core CSS -->
     <link href="js/plugin/bootstrap-3.3.4/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <script type="text/javascript" src="js/plugin/jquery/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/plugin/bootstrap-3.3.4/dist/js/bootstrap.min.js"></script>
+    
     <!-- Custom styles for this template -->
     <link href="css/navbar-fixed-top.css" rel="stylesheet">
 
@@ -30,14 +32,14 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     
-    <script data-curl-run="js/home.js" src="js/plugin/curl/curl.js"></script>
+<!--     <script data-curl-run="js/home.js" src="js/plugin/curl/curl.js"></script> -->
     
   </head>
 
   <body>
 
     <!-- Fixed navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
        
         <div class="navbar-header">
@@ -47,8 +49,9 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Snow Ball</a>
+          <a class="navbar-brand" href="#">Todo</a>
         </div>
+        
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><a href="#Home">Home</a></li>
@@ -64,12 +67,7 @@
               </ul>
             </li>
           </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="active">Default</a></li>
-          </ul>
-        </div>
-        
-        
+         
       </div>
     </nav>
 

@@ -13,11 +13,6 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class IndexController {
 	
-	@RequestMapping("index")
-    public ModelAndView index(HttpServletRequest request) {
-       return new ModelAndView("index");
-    }
-	
 	@RequestMapping("home")
     public ModelAndView home(HttpServletRequest request) {
        return new ModelAndView("home");
