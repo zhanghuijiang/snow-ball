@@ -8,6 +8,9 @@ spring mvc : http://docs.spring.io/spring/docs/4.2.0.BUILD-SNAPSHOT/spring-frame
 mongodb : http://docs.mongodb.org/manual/   
 spring data mongoDB : http://docs.spring.io/spring-data/data-mongo/docs/1.7.0.RC1/reference/html/  
 
+##任务阶段
+1.todo demo 版
+
 ##效果   
 ### 1).todo ref -- http://backbonejs.org/#examples-todos   
 ![Aaron Swartz](https://github.com/ittarvin/snow-ball/blob/master/todo/src/main/webapp/images/todo.jpg?raw=true)    
