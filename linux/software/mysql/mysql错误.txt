@@ -13,3 +13,9 @@ Based on Centos, an additional method for getting it back up again when you run 
 
 # service mysqld start
 Restarting the service creates a new entry called mqsql.sock
+
+
+2.skip copying to tmp table on disk mysql（tmp 空间不足引起的问题）
+参考：http://stackoverflow.com/questions/7532307/skip-copying-to-tmp-table-on-disk-mysql
+
+
