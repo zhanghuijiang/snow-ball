@@ -10,7 +10,7 @@ var curl;
 			// Third-party packages
 			curl: { location: 'js/plugin/curl/curl.js'},
 			jquery: { location: 'js/plugin/jquery/jquery-1.11.2.min', main: '.' },
-			Backbone: { location: 'js/plugin/backbone/backbone-min', main: '.' },
+			Backbone: { location: 'js/plugin/backbone-master/backbone-min', main: '.' },
 			underscore: { location: 'js/plugin/underscore/underscore-min', main: '.' }
 		}
 	});
