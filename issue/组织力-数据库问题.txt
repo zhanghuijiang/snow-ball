@@ -1,2 +1,0 @@
-1.skip copying to tmp table on disk mysql
-参考：http://stackoverflow.com/questions/7532307/skip-copying-to-tmp-table-on-disk-mysql
