@@ -10,13 +10,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Just do it</title>
+    <title>TODO-SEARCH</title>
 
     <!-- Bootstrap core CSS -->
     <link href="js/plugin/bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet">
-    <script type="text/javascript" src="js/plugin/jquery/jquery-1.11.2.min.js"></script>
-    <script type="text/javascript" src="js/plugin/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
-    
     <!-- Custom styles for this template -->
     <link href="css/dashboard.css" rel="stylesheet">
     
@@ -86,6 +83,9 @@
       </div>
       
     </div>
+    
+    <script type="text/javascript" src="js/plugin/jquery/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/plugin/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
     
   </body>
 </html>
