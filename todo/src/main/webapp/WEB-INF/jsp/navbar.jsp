@@ -20,6 +20,7 @@
         <li><a href="togo?name=todosearch">ToDos-S(search)</a></li>
         <li><a href="togo?name=todopage">ToDos-P(page)</a></li>
         <li><a href="togo?name=cropper">Image-C(crop)</a></li>
+        <li><a href="togo?name=cropperwechat">Image-W(wechat)</a></li>
       </ul>
      
   </div>
