@@ -24,6 +24,7 @@
     this.$loading = this.$container.find('.loading');
     this.$cancel = this.$container.find('.cancel');
     this.$done = this.$container.find('.done');
+    this.$bottomNav = this.$container.find('.bottomNav');
     
     this.$avatarForm = this.$avatarModal.find('.avatar-form');
     this.$avatarUpload = this.$avatarForm.find('.avatar-upload');
@@ -70,7 +71,10 @@
           file;
       
       if (this.support.datauri) {
+    	  
     	this.$avatarWrapper.show();
+    	this.$bottomNav.show();
+    	
         files = this.$avatarInput.prop('files');
         if (files.length > 0) {
           file = files[0];
@@ -149,6 +153,7 @@
     stopCropper: function () {
       if (this.active) {
     	this.$avatarWrapper.hide()  
+    	this.$bottomNav.hide();
         this.$img.cropper('destroy');
         this.$img.remove();
         this.active = false;
@@ -195,9 +200,10 @@
 
     submitDone: function (data) {
 
-      if ($.isPlainObject(data) && data.state === 200) {
+      if (data.result) {
         if (data.result) {
-          this.url = data.result;
+        	
+          this.url = data.url;
 
           if (this.support.datauri || this.uploaded) {
             this.uploaded = false;

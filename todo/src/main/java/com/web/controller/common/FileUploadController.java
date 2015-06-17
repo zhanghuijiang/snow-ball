@@ -65,11 +65,18 @@ public class FileUploadController {
             ImageReader reader = (ImageReader) readers.next();
             reader.setInput(iis,true);
             ImageReadParam param = reader.getDefaultReadParam();
-            java.awt.Rectangle rect  = new Rectangle(obj.getInteger("x"), obj.getInteger("y"), obj.getInteger("width"),  obj.getInteger("height"));
+            
+            int x = obj.getInteger("x") > 0 ? obj.getInteger("x"):0;
+            int y = obj.getInteger("y")>  0 ? obj.getInteger("y"):0;
+            int w = obj.getInteger("width") > 0 ? obj.getInteger("width"):0;
+            int h = obj.getInteger("height")> 0 ? obj.getInteger("height"):0;
+            
+            java.awt.Rectangle rect  = new Rectangle(x,y,w,h);
             param.setSourceRegion(rect);
             BufferedImage bi = reader.read(0, param);
             Boolean result=ImageIO.write(bi, suffix.substring(1), new File(fileName));
             model.put("result", result);
+            model.put("url", fileName);
 		} catch (Exception e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();

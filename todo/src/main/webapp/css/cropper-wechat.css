@@ -53,6 +53,7 @@
  _top: expression_r(documentElement.scrollTop + documentElement.clientHeight-this.offsetHeight); 
  overflow:visible;
  background-color: #000;
+ display:none;
 }
  
 .bottomNav .cancel a{
@@ -73,3 +74,15 @@
 	text-decoration: none;
 }
 
+.loading {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #fff url("../images/loading.gif") no-repeat center center;
+  opacity: .75;
+  filter: alpha(opacity=75);
+  z-index: 20140628;
+}
