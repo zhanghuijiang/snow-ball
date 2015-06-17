@@ -19,6 +19,7 @@
     this.$container = $element;
 
     this.$avatarView = this.$container.find('.avatar-view');
+    this.$avatar = this.$avatarView.find('img');
     
     this.$avatarModal = this.$container.find('#avatar-modal');
     this.$loading = this.$container.find('.loading');
@@ -201,10 +202,8 @@
     submitDone: function (data) {
 
       if (data.result) {
-        if (data.result) {
-        	
           this.url = data.url;
-
+          this.$avatar.attr('src',this.url);
           if (this.support.datauri || this.uploaded) {
             this.uploaded = false;
             this.cropDone();
@@ -213,11 +212,7 @@
             this.$avatarSrc.val(this.url);
             this.startCropper();
           }
-
           this.$avatarInput.val('');
-        } else if (data.message) {
-           console.log(data.message);
-        }
       } else {
     	  console.log('Failed to response');
       }
