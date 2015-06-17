@@ -40,7 +40,7 @@ public class FileUploadController {
 		Map<String,Object> model= new HashMap<String,Object>();
 		try {
 			
-			SimpleDateFormat dateformat = new SimpleDateFormat("yyyy-MM-dd-HH");     
+			SimpleDateFormat dateformat = new SimpleDateFormat("yyyy-MM-dd");     
 	        /**构建图片保存的目录**/    
 	        String logoPathDir = "D:/files/"+ dateformat.format(new Date());     
 	        /**根据真实路径创建目录**/    
